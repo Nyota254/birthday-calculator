@@ -1,16 +1,14 @@
 
-$(document).ready(function() {
-  $("form#weekdayakan").submit(function(event) {
-    event.preventDefault();
-    var dayofBirth = parseInt($("#dayofBirth").val());
-    var monthofBirth = parseInt($("#monthofBirth").val());
-    var yearofBirth = parseInt($("#yearofBirth").val());
-    var centuryofBirth = parseInt(yearofBirth.slice(0,3 ));
-    var year1ofBirth = parseInt(yearofBirth.slice(3,5 ));
+var getData(){
+    var dayofBirth = document.getElementById('dayofBirth')
+    var monthofBirth = document.getElementById('monthofBirth')
+    var yearofBirth = document.getElementById('yearofBirth')
+    var centuryofBirth = yearofBirth.slice(0, 3);
+    var year1ofBirth = yearofBirth.slice(3,5 );
+    validate data()
     var result = weekdayCalculator(centuryofBirth, year1ofBirth, monthofBirth, dayofBirth);
-    $("#output").text(result);
-  });
-});
+
+  }; 
 
 
 var weekDayCalculator = function(cc, yy, mm, dd){
