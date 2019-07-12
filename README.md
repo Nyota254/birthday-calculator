@@ -16,4 +16,4 @@ HTML, CSS(PERSONAL STYLES AND BOOTSTRAP FILE) AND JAVASCRIPT.
 Incase of any issues please Dont hesitate to contact knyota66@gmail.com
 ### License
 *MIT*
-Copyright (c) {year} **NYOTA**
+Copyright (c) 2019 **NYOTA**
