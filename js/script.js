@@ -1,10 +1,3 @@
-var yearofBirth = parseInt(prompt("Insert you year of birth:"));
-var dayofBirth = parseInt(prompt("Insert day of birth:"));
-var monthofBirth = parseInt(prompt("insert month of birth: "));
-var centuryofBirth = parseInt(yearofBirth.slice(0,3 ));
-var year1ofBirth = parseInt(yearofBirth.slice(3,5 ));
-var gender = prompt("please enter your gender");
-var daysofWeek = [monday, tuesday, wednesday, thursday, friday, saturday, sunday];
 
 $(document).ready(function() {
   $("form#weekdayakan").submit(function(event) {
