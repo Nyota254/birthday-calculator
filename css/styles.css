@@ -1,3 +1,18 @@
 .form-control {
   width: 45%;
 }
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+  text-align: center;
+}
+body {
+  background-image: url(../images/background1.jpg);
+  font-family: 'Rancho', cursive;
+  font-size: 20px;
+}
+.bg-personal {
+  background-color: #ffffff;
+}
+.size-personal{
+  font-size:;
+}
