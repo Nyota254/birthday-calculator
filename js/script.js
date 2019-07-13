@@ -1,13 +1,16 @@
-
+var weekDays = [monday, tuesday , wednesday, thursday, friday, saturday, sunday]
 var getData(){
     var dayofBirth = document.getElementById('dayofBirth')
     var monthofBirth = document.getElementById('monthofBirth')
     var yearofBirth = document.getElementById('yearofBirth')
     var centuryofBirth = yearofBirth.slice(0, 3);
     var year1ofBirth = yearofBirth.slice(3,5 );
-    validate data(dateofBirth, monthofBirth)
+    var gender = document.getElementById('male');
+    var gender = document.getElementById('female');
+    validate data(dateofBirth, monthofBirth, gender);
     var result = weekdayCalculator(centuryofBirth, year1ofBirth, monthofBirth, dayofBirth);
 alert(weekdayCalculator);
+   var result2 = result.toFixed();
   };
 
 
@@ -52,7 +55,7 @@ if (gender === male && dayweekofBirth === sunday){
 
 
 
-function validateData(dayofBirth, monthofBirth){
+function validateData(dayofBirth, monthofBirth, gender){
  if(dayofBirth <= 0 || dayofBirth > 31){
  alert ("INVALID DAY OF BIRTH PLEASE ENTER A NUMBER BETWEEN 1 AND 31");
  return;
