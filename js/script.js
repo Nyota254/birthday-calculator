@@ -5,7 +5,7 @@ var getData(){
     var yearofBirth = document.getElementById('yearofBirth')
     var centuryofBirth = yearofBirth.slice(0, 3);
     var year1ofBirth = yearofBirth.slice(3,5 );
-    validate data()
+    validate data(dateofBirth, monthofBirth)
     var result = weekdayCalculator(centuryofBirth, year1ofBirth, monthofBirth, dayofBirth);
 alert(weekdayCalculator);
   };
@@ -60,4 +60,8 @@ function validateData(dayofBirth, monthofBirth){
  if(monthofBirth <= 0 || monthofBirth > 12) {
  alert ("INVALID MONTH PLEASE ENTER A NUMBER BETWEEN 1 AND 12")
  return;
- }}
+ }
+  if(gender === male && gender === female){
+    alert("INVALID ENTRY ONLY ONE GENDER")
+    return;
+  }}
