@@ -57,7 +57,7 @@ var gender = $("input:radio[name=gender]:checked").val();
 validateData(dayofBirth, monthofBirth);
 var resultOne = weekDayCalculator(centuryofBirth, yearofBirth, monthofBirth, dayofBirth);
 var result = resultOne.toFixed();
-$("#output").text(gender);
+$("#output").text("Date of Birth: " + dayofBirth + "/" +monthofBirth + "/" + fullyearofBirth + "." );
 dayandAkanname(gender, result);
 });
 });
