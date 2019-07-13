@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -40,7 +41,7 @@
             </div>
           </div>
           <hr>
-          <div class="card row">
+          <div class="row">
             <div class="col-md-6">
           <p>PLEASE INSERT YOUR DETAILS BELOW:</p>
     <form id="weekdayakan">
@@ -53,22 +54,31 @@
         <input type="text"  class= "form-control" id="monthofBirth" placeholder="Month">
       </div>
       <div class="form-group">
-        <label for="yearofBirth">Year of Birth</label>
+        <label for="fullyearofBirth">Full Year of Birth e.g 2019</label>
+        <input type="text"  class= "form-control" id="fullyearofBirth" placeholder="Full Year">
+      </div>
+      <div class="form-group">
+        <label for="centuryofbirth">century of Birth e.g 2019...20 is the century</label>
+        <input type="text"  class= "form-control" id="centuryofBirth" placeholder="Century">
+      </div>
+      <div class="form-group">
+        <label for="yearofBirth">Year of Birth e.g 2019...19 is the year of birth</label>
         <input type="text"  class= "form-control" id="yearofBirth" placeholder="Year">
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="male" value="gender">
+        <input class="form-check-input" type="checkbox" id="gender" value="male">
         <label class="form-check-label" for="male">Male</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="female" value="gender">
+        <input class="form-check-input" type="checkbox" id="gender" value="female">
         <label class="form-check-label" for="female">Female</label>
       </div>
-      <button onclick="getData()"type="submit" class="btn btn-primary size-personal">SUBMIT</button>
+      <button type="submit" class="btn btn-primary">SUBMIT</button>
       </div>
     </form>
     <div class="col-md-6">
-    <p id="demo"></p>
+      <P>RESULTS:</P>
+    <div id="output"> </div>
   </div>
   </div>
     </div>
