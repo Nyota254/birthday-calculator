@@ -7,8 +7,8 @@ var getData(){
     var year1ofBirth = yearofBirth.slice(3,5 );
     validate data()
     var result = weekdayCalculator(centuryofBirth, year1ofBirth, monthofBirth, dayofBirth);
-
-  }; 
+alert(weekdayCalculator);
+  };
 
 
 var weekDayCalculator = function(cc, yy, mm, dd){
@@ -52,7 +52,7 @@ if (gender === male && dayweekofBirth === sunday){
 
 
 
-function validateData(){
+function validateData(dayofBirth, monthofBirth){
  if(dayofBirth <= 0 || dayofBirth > 31){
  alert ("INVALID DAY OF BIRTH PLEASE ENTER A NUMBER BETWEEN 1 AND 31");
  return;
