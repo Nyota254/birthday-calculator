@@ -1,7 +1,7 @@
 # BIRTH-DAY AND AKAN NAME APP
 #### The application is used to calculate the day of the week you were born and give you your AKAN name, 12-jul-2019
 #### By **NYOTA**
-#### Link to live site
+#### Link to live site https://nyota254.github.io/birthday-calculator/
 ## Description
 This application checks the day of the week of ones birth.Most people know their date of births but not the day they were born.It also assighns you your AKAN name.Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
 ## Setup/Installation Requirements
